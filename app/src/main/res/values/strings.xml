@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Giziku</string>
+    <string name="sudahPunyaAkun">Sudah memiliki akun? <font color="#000000">Masuk</font></string>
+    <string name="belumPunyaAkun">Belum memiliki akun? <font color="#000000">Daftar</font></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="tes">
+        <item name="android:textSize">1dp</item> <!-- Ukuran font -->
+        <!-- Properti teks lainnya seperti warna, gaya, dll -->
+    </style>
+
+</resources>

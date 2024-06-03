@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/baseline_chevron_left_24"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/ari"
+            android:padding="15dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Resep MPASI"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/textView1"
+            android:src="@drawable/garis_full" />
+
+
+        <ImageView
+            android:id="@+id/imageMpasi"
+            android:layout_width="330dp"
+            android:layout_height="180dp"
+            android:src="@drawable/artikel3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@id/imageView17"/>
+
+        <TextView
+            android:id="@+id/tanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 Maret 2024"
+            app:layout_constraintTop_toBottomOf="@+id/imageMpasi"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="35dp"/>
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/judul"
+            android:text="Resep Tinggi Protein: Perkedel Tempe dan Puyuh"
+            android:fontFamily="@font/ari"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"
+            android:padding="3dp"
+            app:layout_constraintTop_toBottomOf="@id/tanggal"
+            app:layout_constraintStart_toStartOf="@id/tanggal"/>
+
+        <TextView
+            android:id="@+id/titleKategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kategori"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/judul"
+            app:layout_constraintStart_toStartOf="@id/judul"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/Kategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Makanan Utama"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="@id/titleKategori"
+            app:layout_constraintStart_toEndOf="@id/titleKategori"
+            android:layout_marginStart="135dp"/>
+
+        <TextView
+            android:id="@+id/titleWaktumemasak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Waktu Memasak"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/titleKategori"
+            app:layout_constraintStart_toStartOf="@id/judul"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/Waktumemasak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 Menit"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/Kategori"
+            app:layout_constraintTop_toTopOf="@id/titleWaktumemasak" />
+
+        <TextView
+            android:id="@+id/titleUsia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usia"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/titleWaktumemasak"
+            app:layout_constraintStart_toStartOf="@id/judul"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/Usia"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="10 Menit"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/Waktumemasak"
+            app:layout_constraintTop_toTopOf="@id/titleUsia" />
+
+        <TextView
+            android:id="@+id/titlePorsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:text="Porsi"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/titleUsia"
+            app:layout_constraintTop_toBottomOf="@id/titleUsia" />
+
+        <TextView
+            android:id="@+id/Porsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 Menit"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/Usia"
+            app:layout_constraintTop_toTopOf="@id/titlePorsi" />
+
+        <TextView
+            android:id="@+id/titleFunfact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fun Fact"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/titlePorsi"
+            app:layout_constraintStart_toStartOf="@id/judul"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/Funfact"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Tempe merupakan bahan olahan kacang kedelai yang tinggi protein nabati, sehingga mudah dicerna oleh bayi."
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/Porsi"
+            app:layout_constraintTop_toTopOf="@id/titleFunfact" />
+
+        <TextView
+            android:id="@+id/titleBahan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bahan : "
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/judul"
+            app:layout_constraintTop_toBottomOf="@+id/Funfact" />
+        <TextView
+            android:id="@+id/Bahan"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:text="1) 5 butir telur puyuh rebus 2.)bagi dua
+300 g kentang 3) potong kotak lalu goreng, haluskan selagi panas
+4) 250 g tempe, potong kotak lalu goreng, haluskan selagi panas
+5) 1/2 batang daun bawang, iris tipis
+6) 1 butir kuning telur, kocok lepas Minyak untuk menggoreng"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="8dp"
+            app:layout_constraintTop_toBottomOf="@id/titleBahan"
+            android:justificationMode="inter_word"
+            app:layout_constraintStart_toStartOf="@id/judul"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/titleCaramembuat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cara Membuat : "
+            android:layout_marginTop="25dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/judul"
+            app:layout_constraintTop_toBottomOf="@+id/Bahan" />
+        <TextView
+            android:id="@+id/Caramembuat"
+            android:layout_width="310dp"
+
+            android:layout_height="wrap_content"
+            android:text="1) 5 butir telur puyuh rebus 2.)bagi dua
+300 g kentang 3) potong kotak lalu goreng, haluskan selagi panas
+4) 250 g tempe, potong kotak lalu goreng, haluskan selagi panas
+5) 1/2 batang daun bawang, iris tipis
+6) 1 butir kuning telur, kocok lepas Minyak untuk menggoreng"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/titleCaramembuat"
+            app:layout_constraintStart_toStartOf="@id/judul"
+            android:justificationMode="inter_word"
+            android:layout_marginTop="10dp"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

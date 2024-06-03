@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logoaplikasi"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Giziku"
+        tools:targetApi="31">
+        <activity
+            android:name=".MenuVideo_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DetailMenu_AsupanIbu"
+            android:exported="false" />
+        <activity
+            android:name=".menuAwal.MenuAsupanIbu_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".menuAwal.MenuMPASI_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".imunisasi.DetailImunisasi_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".imunisasi.JadwalImunisasi_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".imunisasi.Imunisasi_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".LupaPassword_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".konsultasi.PembayaranDokter_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".konsultasi.ProfilDokter_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".konsultasi.KonsultasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PembayaranVaksin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DetailMenu_Mpasi"
+            android:exported="false" />
+        <activity
+            android:name=".vaksin.JadwalVaksin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".vaksin.JenisVaksin"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TambahAnak"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DetailArtikel"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DetailMpasi"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DetailAsupanIbu"
+            android:exported="false" />
+        <activity
+            android:name=".BottomNavbar"
+            android:exported="false" />
+        <activity
+            android:name=".Daftar"
+            android:exported="false" />
+        <activity
+            android:name=".Pertama"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vaksin.DetailVaksin"
+            android:exported="false" />
+    </application>
+
+</manifest>

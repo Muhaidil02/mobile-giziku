@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".imunisasi.JadwalImunisasi_Activity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_chevron_left_24"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/ari"
+        android:padding="15dp"
+        android:text="Imunisasi"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/garis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/garis_full"
+        app:layout_constraintTop_toBottomOf="@id/textView1" />
+    <ImageView
+        android:id="@+id/btnRefresh"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/baseline_refresh_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="15dp"/>
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintTop_toBottomOf="@id/garis"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/bulan0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="30dp"
+                android:text="0 Bulan"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/kotakHijau1"
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:src="@drawable/kotakimunisasi"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bulan0" />
+
+            <TextView
+                android:id="@+id/bulanImunisasi1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary"
+                android:text="Direkomendasikan di 10 Mei 2024"
+                app:layout_constraintBottom_toBottomOf="@+id/kotakHijau1"
+                app:layout_constraintEnd_toEndOf="@+id/kotakHijau1"
+                app:layout_constraintStart_toStartOf="@+id/kotakHijau1"
+                app:layout_constraintTop_toTopOf="@+id/kotakHijau1" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView1"
+                android:layout_width="match_parent"
+                android:background="@color/abumuda"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:layout_constraintTop_toBottomOf="@id/kotakHijau1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="10dp">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/pop_imunisasi1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <TextView
+                android:id="@+id/bulan1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 Bulan"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginStart="45dp"
+                app:layout_constraintTop_toBottomOf="@id/cardView1"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="30dp"/>
+            <ImageView
+                android:id="@+id/kotakHijau2"
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:src="@drawable/kotakimunisasi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bulan1"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp" />
+
+            <TextView
+                android:id="@+id/bulanImunisasi2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary"
+                android:text="Direkomendasikan di 10 Juni 2024"
+                app:layout_constraintBottom_toBottomOf="@+id/kotakHijau2"
+                app:layout_constraintEnd_toEndOf="@+id/kotakHijau2"
+                app:layout_constraintStart_toStartOf="@+id/kotakHijau2"
+                app:layout_constraintTop_toTopOf="@+id/kotakHijau2" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="match_parent"
+                android:background="@color/abumuda"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:layout_constraintTop_toBottomOf="@id/kotakHijau2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="10dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/pop_imunisasi2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/bulan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 Bulan"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginStart="45dp"
+                app:layout_constraintTop_toBottomOf="@id/cardView2"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="30dp"/>
+            <ImageView
+                android:id="@+id/kotakHijau3"
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:src="@drawable/kotakimunisasi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bulan2"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp" />
+
+            <TextView
+                android:id="@+id/bulanImunisasi3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary"
+                android:text="Direkomendasikan di 10 Juli 2024"
+                app:layout_constraintBottom_toBottomOf="@+id/kotakHijau3"
+                app:layout_constraintEnd_toEndOf="@+id/kotakHijau3"
+                app:layout_constraintStart_toStartOf="@+id/kotakHijau3"
+                app:layout_constraintTop_toTopOf="@+id/kotakHijau3" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="match_parent"
+                android:background="@color/abumuda"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:layout_constraintTop_toBottomOf="@id/kotakHijau3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="10dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/pop_imunisasi3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/bulan3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 Bulan"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginStart="45dp"
+                app:layout_constraintTop_toBottomOf="@id/cardView3"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="30dp"/>
+            <ImageView
+                android:id="@+id/kotakHijau4"
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:src="@drawable/kotakimunisasi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bulan3"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp" />
+
+            <TextView
+                android:id="@+id/bulanImunisasi4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary"
+                android:text="Direkomendasikan di 10 Agustus 2024"
+                app:layout_constraintBottom_toBottomOf="@+id/kotakHijau4"
+                app:layout_constraintEnd_toEndOf="@+id/kotakHijau4"
+                app:layout_constraintStart_toStartOf="@+id/kotakHijau4"
+                app:layout_constraintTop_toTopOf="@+id/kotakHijau4" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView4"
+                android:layout_width="match_parent"
+                android:background="@color/abumuda"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:layout_constraintTop_toBottomOf="@id/kotakHijau4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="10dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/pop_imunisasi4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+          
+

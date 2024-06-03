@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/item_selector"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textArtikel1"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Tumis Kacang Panjang Tempe"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:layout_marginEnd="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ketArtikel1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:drawablePadding="10dp"
+        android:text="Penulis : Aidil"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/textArtikel1"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/textArtikel1"
+        app:layout_constraintTop_toBottomOf="@+id/textArtikel1" />
+
+    <ImageView
+        android:id="@+id/gambarArtikel1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/asupanibu_sayur"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ketArtikel1"
+        app:layout_constraintTop_toTopOf="@+id/textArtikel1" />
+
+    <TextView
+        android:id="@+id/tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="11 Maret 2024"
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="@+id/textArtikel1"
+        app:layout_constraintTop_toBottomOf="@+id/ketArtikel1" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

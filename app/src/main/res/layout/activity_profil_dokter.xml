@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".konsultasi.ProfilDokter_Activity">
+
+
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/baseline_chevron_left_24"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/ari"
+            android:layout_margin="15dp"
+            android:text="Profil Dokter"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/detailGambarDokter"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:padding="13dp"
+            android:src="@drawable/gambarpink"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView1" />
+
+        <TextView
+            android:id="@+id/detailNamaDokter"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="Detail Nama Dokter"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="25dp"
+            app:layout_constraintStart_toEndOf="@+id/detailGambarDokter"
+            app:layout_constraintTop_toTopOf="@+id/detailGambarDokter" />
+
+        <TextView
+            android:id="@+id/detailPengalamanDokter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Ini Pengalaman"
+            android:textSize="12sp"
+            android:textColor="@color/hitamburam"
+            app:layout_constraintTop_toBottomOf="@id/detailNamaDokter"
+            app:layout_constraintStart_toStartOf="@id/detailNamaDokter"/>
+
+        <TextView
+            android:id="@+id/detailJarakDokter"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:text="Ini Pengalaman"
+            android:textSize="12sp"
+            android:textColor="@color/hitamburam"
+            app:layout_constraintTop_toBottomOf="@id/detailPengalamanDokter"
+            app:layout_constraintStart_toStartOf="@id/detailNamaDokter"/>
+
+        <ImageView
+            android:id="@+id/garis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/garis_full"
+            app:layout_constraintTop_toBottomOf="@id/detailGambarDokter"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tempat dan Jadwal Praktik Offline"
+            android:fontFamily="@font/ari"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/garis"
+            app:layout_constraintStart_toStartOf="@id/textView1"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/background_abu_tanpagaris"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text1" />
+
+        <TextView
+            android:id="@+id/rsBhayangkara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/logo_rumah_sakit"
+            android:drawablePadding="10dp"
+            android:text="Rumah Sakit Bhayangkara Makassar"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/imageView20"
+            app:layout_constraintTop_toTopOf="@+id/imageView20"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:id="@+id/lihatLokasiDokter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lihat Lokasi"
+            android:textColor="@color/primary"
+            android:layout_marginStart="40dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/imageView20"
+            app:layout_constraintTop_toBottomOf="@+id/rsBhayangkara" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+            android:src="@drawable/garis"
+            app:layout_constraintEnd_toEndOf="@id/imageView20"
+            app:layout_constraintStart_toStartOf="@id/imageView20"
+            app:layout_constraintTop_toBottomOf="@id/lihatLokasiDokter" />
+
+        <TextView
+            android:id="@+id/textViewSenin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/baseline_calendar_today_24"
+            android:drawablePadding="10dp"
+            android:text="Senin"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/rsBhayangkara"
+            app:layout_constraintTop_toBottomOf="@+id/imageView21" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:text="07.00 - 12.00"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@id/imageView20"
+            app:layout_constraintTop_toTopOf="@+id/textViewSenin" />
+
+        <TextView
+            android:id="@+id/textViewSelasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="24dp"
+            android:text="Selasa"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/rsBhayangkara"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSenin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08.00 - 14.00"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@id/imageView20"
+            app:layout_constraintTop_toTopOf="@+id/textViewSelasa"
+            android:layout_marginEnd="25dp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11.00 - 17.00"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@id/imageView20"
+            app:layout_constraintTop_toTopOf="@+id/textViewJumat"
+            android:layout_marginEnd="25dp" />
+        <TextView
+            android:id="@+id/textViewRabu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="24dp"
+            android:text="Rabu"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/rsBhayangkara"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSelasa" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09.00 - 15.00"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@id/imageView20"
+            app:layout_constraintTop_toTopOf="@+id/textViewRabu"
+            android:layout_marginEnd="25dp" />
+
+        <TextView
+            android:id="@+id/textViewKamis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="24dp"
+            android:text="Kamis"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/rsBhayangkara"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRabu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10.00 - 16.00"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@id/imageView20"
+            app:layout_constraintTop_toTopOf="@+id/textViewKamis"
+            android:layout_marginEnd="25dp" />
+
+        <TextView
+            android:id="@+id/textViewJumat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="24dp"
+            android:text="Jumat"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/rsBhayangkara"
+            app:layout_constraintTop_toBottomOf="@+id/textViewKamis" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11.00 - 17.00"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@id/imageView20"
+            app:layout_constraintTop_toTopOf="@+id/textViewJumat"
+            android:layout_marginEnd="25dp" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="350dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/background_abu_tanpagaris"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView20" />
+
+        <TextView
+            android:id="@+id/rsLabuangBaji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:drawableLeft="@drawable/logo_rumah_sakit"
+            android:drawablePadding="10dp"
+            android:text="Rs. Labuang Baji"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/imageView22"
+            app:layout_constraintTop_toTopOf="@+id/imageView22" />
+
+        <TextView
+            android:id="@+id/lihatLokasiLabuangBaji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lihat Lokasi"
+            android:textColor="@color/primary"
+            android:layout_marginStart="40dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/imageView22"
+            app:layout_constraintTop_toBottomOf="@+id/rsLabuangBaji" />
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/garis"
+            app:layout_constraintEnd_toEndOf="@id/imageView22"
+            app:layout_constraintStart_toStartOf="@id/imageView22"
+            app:layout_constraintTop_toBottomOf="@id/lihatLokasiLabuangBaji" />
+
+        <TextView
+            android:id="@+id/textViewSeninLabuangBaji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/baseline_calendar_today_24"
+            android:drawablePadding="10dp"
+            android:text="Senin"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/rsLabuangBaji"
+            app:layout_constraintTop_toBottomOf="@+id/imageView23" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:text="07.00 - 12.00"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@id/imageView22"
+            app:layout_constraintTop_toTopOf="@+id/textViewSeninLabuangBaji" />
+
+        <TextView
+            android:id="@+id/textViewSelasaLabuangBaji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="24dp"
+            android:text="Selasa"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/rsLabuangBaji"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSeninLabuangBaji" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08.00 - 14.00"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@id/imageView22"
+            app:layout_constraintTop_toTopOf="@+id/textViewSelasaLabuangBaji"
+            android:layout_marginEnd="25dp" />
+
+        <TextView
+            android:id="@+id/textViewKamisLabuangBaji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:text="Kamis"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/rsLabuangBaji"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSelasaLabuangBaji" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10.00 - 16.00"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@id/imageView22"
+            app:layout_constraintTop_toTopOf="@+id/textViewKamisLabuangBaji"
+            android:layout_marginEnd="25dp" />
+
+        <TextView
+            android:id="@+id/textViewJumatLabuangBaji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:text="Jumat"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/rsLabuangBaji"
+            app:layout_constraintTop_toBottomOf="@+id/textViewKamisLabuangBaji" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:text="11.00 - 17.00"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@id/imageView22"
+            app:layout_constraintTop_toTopOf="@+id/textViewJumatLabuangBaji"
+             />
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/background_abu_tanpagaris"
+
+
+            app:layout_constraintStart_toStartOf="@+id/imageView22"
+            app:layout_constraintTop_toBottomOf="@+id/imageView22" />
+
+        <TextView
+            android:id="@+id/rsHaji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/logo_rumah_sakit"
+            android:drawablePadding="10dp"
+            android:text="RS. Haji"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/imageView25"
+            app:layout_constraintTop_toTopOf="@+id/imageView25"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:id="@+id/lihatLokasiHaji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lihat Lokasi"
+            android:textColor="@color/primary"
+            android:layout_marginStart="40dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/imageView25"
+            app:layout_constraintTop_toBottomOf="@+id/rsHaji" />
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/garis"
+            app:layout_constraintEnd_toEndOf="@id/imageView25"
+            app:layout_constraintStart_toStartOf="@id/imageView25"
+            app:layout_constraintTop_toBottomOf="@id/lihatLokasiHaji" />
+
+        <TextView
+            android:id="@+id/textViewSeninHaji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/baseline_calendar_today_24"
+            android:drawablePadding="10dp"
+            android:text="Senin"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/rsHaji"
+            app:layout_constraintTop_toBottomOf="@+id/imageView24" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:text="18.00 - 20.00"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@id/imageView25"
+            app:layout_constraintTop_toTopOf="@+id/textViewSeninHaji" />
+
+        <TextView
+            android:id="@+id/textViewSelasaHaji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="24dp"
+            android:text="Selasa"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/rsHaji"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSeninHaji" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18.00 - 20.00"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@id/imageView25"
+            app:layout_constraintTop_toTopOf="@+id/textViewSelasaHaji"
+            android:layout_marginEnd="25dp" />
+
+        <TextView
+            android:id="@+id/textViewRabuHaji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:text="Rabu"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/rsHaji"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSelasaHaji" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18.00 - 20.00"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@id/imageView25"
+            app:layout_constraintTop_toTopOf="@+id/textViewRabuHaji"
+            android:layout_marginEnd="25dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/garis_full"
+            app:layout_constraintTop_toBottomOf="@id/imageView25"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="130dp" />
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="50dp"
+            android:text="Total"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnLanjut" />
+
+        <TextView
+            android:id="@+id/detailHargaDokter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp.1.360.000"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/btnLanjut"
+            app:layout_constraintStart_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+
+        <Button
+            android:id="@+id/btnLanjut"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/background_btn_coklat"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="25dp"
+            android:text="Lanjut"
+            android:textColor="@color/white"
+            style="@android:style/Widget.Button"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
+

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "22656234422",
+    "project_id": "gizikuapp",
+    "storage_bucket": "gizikuapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22656234422:android:a404ee298ee3aa72880717",
+        "android_client_info": {
+          "package_name": "com.android.giziku"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACBMh72H6jP4GaLRgcarMFx2z7ixEuIUE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

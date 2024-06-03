@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".konsultasi.PembayaranDokter_Activity">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_chevron_left_24"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/ari"
+        android:layout_margin="15dp"
+        android:text="Rincian Pembayaran"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/detailGambarDokter"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:padding="13dp"
+        android:src="@drawable/gambarpink"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView1" />
+
+
+    <TextView
+        android:id="@+id/detailNamaDokter"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="Detail Nama Dokter"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintStart_toEndOf="@+id/detailGambarDokter"
+        app:layout_constraintTop_toTopOf="@+id/detailGambarDokter" />
+
+    <TextView
+        android:id="@+id/detailPengalamanDokter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Ini Pengalaman"
+        android:textSize="12sp"
+        android:textColor="@color/hitamburam"
+        app:layout_constraintTop_toBottomOf="@id/detailNamaDokter"
+        app:layout_constraintStart_toStartOf="@id/detailNamaDokter"/>
+
+    <TextView
+        android:id="@+id/detailJarakDokter"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:text="Ini jarak"
+        android:textSize="12sp"
+        android:textColor="@color/hitamburam"
+        app:layout_constraintTop_toBottomOf="@id/detailPengalamanDokter"
+        app:layout_constraintStart_toStartOf="@id/detailNamaDokter"/>
+
+    <ImageView
+        android:id="@+id/garis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/garis_full"
+        app:layout_constraintTop_toBottomOf="@id/detailGambarDokter"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Biaya Konsultasi Mandiri"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="@id/textView1"
+        app:layout_constraintTop_toBottomOf="@id/garis" />
+
+    <TextView
+        android:id="@+id/hargaPembayaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ini Harga Dokter"
+        android:layout_marginEnd="15dp"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="5dp"
+        android:text="Biaya Layanan"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="@id/textView1"
+        app:layout_constraintTop_toBottomOf="@id/textView12" />
+
+    <TextView
+        android:id="@+id/biayaLayanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp. 0"
+        android:layout_marginEnd="15dp"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Total Pembayaran"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="@id/textView1"
+        app:layout_constraintTop_toBottomOf="@id/textView13" />
+
+    <TextView
+        android:id="@+id/totalPembayaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ini Total Pembaaran"
+        android:textStyle="bold"
+        android:layout_marginEnd="15dp"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/ari"
+        android:text="Pembayaran"
+        android:textColor="@color/primary"
+        app:layout_constraintStart_toStartOf="@id/textView1"
+        app:layout_constraintTop_toBottomOf="@id/textView14" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/pop_pembayaranDokter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/garis_full"
+        app:layout_constraintTop_toBottomOf="@id/imageView25"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="130dp" />
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="50dp"
+        android:text="Total"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnBayar" />
+
+    <TextView
+        android:id="@+id/totalPembayaran2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp.1.360.000"
+        android:gravity="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBayar"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+
+    <Button
+        android:id="@+id/btnBayar"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/background_btn_coklat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="25dp"
+        android:text="Bayar"
+        android:textColor="@color/white"
+        style="@android:style/Widget.Button"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

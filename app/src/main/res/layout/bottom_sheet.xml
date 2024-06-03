@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="13dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/sheet_bg">
+
+
+    <TextView
+        android:id="@+id/textviewDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Detail Vaksin"
+        android:fontFamily="@font/ari"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/garis_full"
+        app:layout_constraintTop_toBottomOf="@id/textviewDetail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/gambarJenisVaksin"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/gambarjenisvaksin"
+        app:layout_constraintStart_toStartOf="@+id/imageView16"
+        app:layout_constraintTop_toBottomOf="@id/textviewDetail" />
+
+    <TextView
+        android:id="@+id/bottomNamaVaksin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hepatitis B"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/gambarJenisVaksin"
+        app:layout_constraintTop_toTopOf="@id/gambarJenisVaksin"
+        android:layout_marginStart="50dp"/>
+    <TextView
+        android:id="@+id/bottomhargaVaksin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp. 1.350.000"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@id/bottomNamaVaksin"
+        app:layout_constraintTop_toBottomOf="@id/bottomNamaVaksin" />
+
+    <TextView
+        android:id="@id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Deskripsi"
+        android:textColor="@color/coklat"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView16"
+        app:layout_constraintTop_toBottomOf="@id/gambarJenisVaksin" />
+
+    <TextView
+        android:id="@+id/bottomdeskripsiVaksin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Vaksin untuk pencegahan penyakit Hepatitis B untuk anak usia 6 minggu hingga 24 bulan"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/imageView16"
+        app:layout_constraintTop_toBottomOf="@id/text" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_coklat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottomdeskripsiVaksin" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Info dari klinik"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView16"
+        app:layout_constraintTop_toBottomOf="@+id/bottomdeskripsiVaksin" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Harga vaksin sudah termasuk biaya jasa dokter dan administrasi"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/text1"
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+    <Button
+        android:id="@+id/btnPesanVaksin"
+        style="@android:style/Widget.Button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/background_btn_coklat"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="Pesan Vaksin"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
